@@ -71,7 +71,7 @@ router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
   Tag.update(
       {
-          id: req.body.id
+          tag_name: req.body.tag_name
       },
       {
           where: {
@@ -100,7 +100,7 @@ router.delete('/:id', (req, res) => {
       }
   })
   .then(dbTagData => {
-      if(dbTagData) {
+      if(!dbTagData) {
           res.status(404).json({ message: 'No tag found with this id'});
           return;
       }
