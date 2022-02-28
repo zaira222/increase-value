@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
       include: [
           {
               model: Product,
-              attributes: ['category_id']
+              attributes: ['id', 'product_name', 'price', 'stock' ,'category_id']
           }
       ]
   })
@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
       include: [
           {
             model: Product,
-            attributes: ['category_id']
+            attributes: ['id', 'product_name', 'price', 'stock','category_id']
           }
       ]
   })
@@ -67,7 +67,7 @@ router.put('/:id', (req, res) => {
   // update a category by its `id` value
   Category.update(
       {
-          category_name: req.body.id
+          category_name: req.body.category_name
       },
       {
           where: {

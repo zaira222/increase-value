@@ -4,5 +4,26 @@
     "express": "^4.17.3",
     "mysql2": "^2.3.3",
     "sequelize": "^6.17.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "name": "increase-value",
+  "description": "This application uses up to date back-end technology to provide the best \r experience to their consumers. Which in turn helps them gain new consumers and be able to compete with other businesses.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaira222/increase-value.git"
+  },
+  "author": "Zaira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaira222/increase-value/issues"
+  },
+  "homepage": "https://github.com/zaira222/increase-value#readme"
 }

@@ -23,7 +23,7 @@ Product.init({
         allowNull: false, 
         type: DataTypes.DECIMAL,
         validate: {
-          len: [2, 10]
+          isDecimal: true
         }
        
       },
